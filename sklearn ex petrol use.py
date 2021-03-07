@@ -35,6 +35,7 @@ for i in range(1, 50):
     mean_squared_loss_arr.append(mean_squared)
     rmse_loss_arr.append(rmse)
     
+    #break loop when accuracy > 0.1%
     if i == 1:
         pass
     else:
@@ -43,6 +44,3 @@ for i in range(1, 50):
         if rmse_percent_difference < .001:
             print(i, rmse_percent_difference)
             break
-
-
-
